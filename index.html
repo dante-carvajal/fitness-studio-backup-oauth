@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Información sobre Fitness Studio Backup Service, utilidad privada de respaldos cifrados en Google Drive.">
+  <title>Fitness Studio Backup Service</title>
+  <style>
+    :root{color-scheme:dark;--bg:#141619;--card:#202328;--text:#f3f3f4;--muted:#b9bbc1;--gold:#c6a46b}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    .wrap{max-width:780px;margin:0 auto;padding:64px 24px}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:12px 0 20px}h2{font-size:1.25rem;margin-top:30px}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:700}.card{background:var(--card);border:1px solid #35383e;border-radius:16px;padding:24px;margin:26px 0}
+    a{color:#edd09c}a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}p,li{color:var(--muted)}footer{padding-top:30px;border-top:1px solid #35383e;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">Fitness Studio · Seguridad operativa</div>
+    <h1>Fitness Studio Backup Service</h1>
+    <p>Herramienta privada de respaldo y recuperación que utiliza Google Drive como destino de copias cifradas de los datos operativos de Fitness Studio.</p>
+    <section class="card" aria-labelledby="funcion"><h2 id="funcion">¿Qué hace este servicio?</h2>
+      <p>El administrador autorizado conecta su cuenta de Google mediante OAuth. La herramienta <strong>rclone</strong> copia a una carpeta dedicada archivos de respaldo que se cifran localmente mediante <strong>rclone crypt</strong> antes de enviarse a Google Drive.</p>
+      <p>La herramienta permite recuperar esas copias para verificar su integridad y ensayar la restauración. No es un servicio público de almacenamiento ni una integración para los alumnos de Fitness Studio.</p>
+    </section>
+    <h2>Acceso a Google Drive</h2>
+    <p>Se solicita el alcance OAuth <code>drive.file</code> para crear, consultar y recuperar archivos autorizados para esta integración. No se necesita acceso general a los documentos personales del usuario.</p>
+    <h2>Privacidad y control</h2>
+    <p>Antes de cargar archivos se cifran su contenido y sus nombres. Las claves de descifrado se custodian por separado. El titular de la cuenta puede revocar el acceso desde la configuración de seguridad de Google.</p>
+    <p><a href="privacy.html">Leer la política de privacidad</a></p>
+    <footer>Servicio técnico privado de Fitness Studio. Para consultas, utilice el correo de soporte mostrado en la pantalla de autorización de Google.</footer>
+  </main>
+</body>
+</html>

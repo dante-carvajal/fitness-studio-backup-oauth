@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Política de privacidad del servicio privado Fitness Studio Backup Service.">
+  <title>Política de privacidad · Fitness Studio Backup Service</title>
+  <style>
+    :root{color-scheme:dark;--bg:#141619;--card:#202328;--text:#f3f3f4;--muted:#b9bbc1;--gold:#c6a46b}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    .wrap{max-width:780px;margin:0 auto;padding:64px 24px}h1{font-size:clamp(2rem,5vw,2.75rem);line-height:1.15;margin:12px 0 20px}h2{font-size:1.2rem;margin-top:30px}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:700}a{color:#edd09c}a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}p,li{color:var(--muted)}footer{padding-top:30px;border-top:1px solid #35383e;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">Fitness Studio Backup Service</div>
+    <h1>Política de privacidad</h1>
+    <p><strong>Actualizada:</strong> 2 de noviembre de 2026.</p>
+    <p>Esta política describe el uso de los datos de Google por <strong>Fitness Studio Backup Service</strong>, una utilidad privada operada por el responsable técnico de Fitness Studio para respaldar y recuperar información cifrada.</p>
+    <h2>1. Datos y permisos de Google</h2>
+    <p>La utilidad solicita mediante OAuth el permiso <code>https://www.googleapis.com/auth/drive.file</code> para crear y acceder a los archivos de respaldo que la propia integración genera o que el titular autoriza. Para establecer y mantener la conexión, rclone almacena localmente información de autorización OAuth.</p>
+    <h2>2. Finalidad del acceso</h2>
+    <p>El acceso se utiliza únicamente para almacenar archivos de respaldo cifrados, comprobar su disponibilidad y recuperarlos cuando el administrador necesita verificar la integridad o ensayar una restauración. No se utiliza para publicidad, análisis comercial ni entrenamiento de modelos de inteligencia artificial.</p>
+    <h2>3. Almacenamiento y cifrado</h2>
+    <p>Los archivos de respaldo se cifran localmente con rclone crypt antes de transferirse a Google Drive, incluyendo el contenido y los nombres de archivos. Las contraseñas de descifrado se custodian por separado de Google Drive. La configuración OAuth se mantiene en el equipo del operador y debe protegerse frente a accesos no autorizados.</p>
+    <h2>4. Compartición de datos</h2>
+    <p>El servicio no vende ni cede los datos obtenidos mediante la API de Google a terceros. Google Drive actúa como proveedor de almacenamiento elegido por el titular de la cuenta. Los respaldos no se hacen públicos deliberadamente.</p>
+    <h2>5. Conservación y eliminación</h2>
+    <p>Los archivos se conservan conforme a la política operativa de respaldos del titular. El administrador puede eliminar las copias de Google Drive desde su cuenta. La revocación del consentimiento OAuth impide nuevas operaciones autorizadas, pero no elimina automáticamente los archivos ya almacenados; estos deberán borrarse por separado si se desea.</p>
+    <h2>6. Control y seguridad de la cuenta</h2>
+    <p>El titular puede revisar o revocar el acceso de la aplicación desde los controles de seguridad de su cuenta Google. El servicio utiliza una cuenta autorizada para administrar exclusivamente sus respaldos; no solicita acceso a Gmail, Contactos o Calendario.</p>
+    <h2>7. Cambios y contacto</h2>
+    <p>Esta política se actualizará si cambian los permisos o el tratamiento de datos del servicio. Para dudas sobre este servicio privado, utilice el correo de soporte indicado en la pantalla de consentimiento OAuth.</p>
+    <p><a href="index.html">Volver al inicio</a></p>
+    <footer>Fitness Studio Backup Service · Aviso aplicable a la integración OAuth de respaldos, no a toda la aplicación móvil Fitness Studio.</footer>
+  </main>
+</body>
+</html>
